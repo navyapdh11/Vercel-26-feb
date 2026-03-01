@@ -1,20 +1,20 @@
 import { NextResponse } from 'next/server';
-import { z } from 'zod';
+import { Redis } from 'ioredis'; // Assuming Redis is used via ioredis
+import { ChatInput } from '../lib/types'; // Example type import
 
-// Define a schema for chat input validation.
-const ChatInputSchema = z.object({
-  message: z.string().min(1, 'Message cannot be empty'),
-});
+const redis = new Redis();
 
 export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    const parsedInput = ChatInputSchema.parse(body);
-
-    // Implement RAG pipeline logic here
-    const response = await someRagPipelineFunction(parsedInput.message);
-    return NextResponse.json({ response }, { status: 200 });
-  } catch (error) {
-    return NextResponse.json({ error: error.message }, { status: 400 });
-  }
+    try {
+        const data: ChatInput = await request.json();
+        if (!data.message) {
+            return NextResponse.json({ error: 'Message is required' }, { status: 400 });
+        }
+        // Handle message and integrate Redis
+        await redis.set('chat_message', data.message);
+        return NextResponse.json({ success: true, message: 'Message processed' });
+    } catch (error) {
+        console.error(error);
+        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    }
 }
