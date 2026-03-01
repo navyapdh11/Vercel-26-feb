@@ -1,0 +1,52 @@
+{
+  "PrivacyAct1988": {
+    "Principles": [
+      "Collection of personal information should be lawful and fair.",
+      "Personal information is collected for a specific purpose and must not be used for any other purpose.",
+      "Information must be kept accurate, up-to-date, and complete.",
+      "Information must be protected from misuse and loss, and from unauthorized access, modification, or disclosure.",
+      "Individuals have a right to access their personal information and request corrections if necessary."
+    ]
+  },
+  "NDISQualityStandards": {
+    "Standards": {
+      "Standard1": "Rights of participants are upheld.",
+      "Standard2": "Participants are supported to make informed choices and to exercise control over their lives.",
+      "Standard3": "Roles and responsibilities are clearly defined for service delivery.",
+      "Standard4": "Services and supports are delivered safely and respond to the needs of the participant.",
+      "Standard5": "Services enhance the participant's quality of life and promote their independence.",
+      "Standard6": "Effective feedback and complaints mechanisms are in place.",
+      "Standard7": "Governance and operational management are effective and transparent.",
+      "Standard8": "The service is responsive to individual needs and supports positive outcomes."
+    }
+  },
+  "AustralianConsumerLaw": {
+    "Requirements": [
+      "Businesses must not engage in misleading or deceptive conduct.",
+      "Goods must be of acceptable quality and fit for purpose.",
+      "Consumers have a right to a refund for faulty goods or services.",
+      "Unsolicited marketing is discouraged, and certain requirements are specified for such practices."
+    ]
+  },
+  "GSTRequirements": {
+    "Information": {
+      "TaxableSupplies": "GST applies to the sale of goods and services unless an exemption applies.",
+      "InputTaxCredits": "Businesses can claim input tax credits for GST paid on purchases related to their business operations.",
+      "GSTRegistration": "Businesses with a certain turnover must register for GST."
+    }
+  },
+  "HealthInformationHandling": {
+    "Rules": [
+      "Health information must be collected, stored, and used in accordance with privacy legislation.",
+      "Individuals have a right to access their health information and request corrections.",
+      "Data minimization principles apply to the collection of health information."
+    ]
+  },
+  "DataRetentionPolicies": {
+    "Policies": [
+      "Data should be retained only as long as necessary for its purpose.",
+      "Personal data must be securely deleted when it is no longer needed.",
+      "Retention periods should be defined based on legal and operational requirements."
+    ]
+  }
+}
